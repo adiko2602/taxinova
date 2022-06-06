@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/taxinova/" element={<Home />} />
-          <Route exact path="/taxinova/gallery/" element={<Gallery />} />
-          <Route exact path="/taxinova/contact/" element={<Contact />} />
+          <Route path="/taxinova/gallery/" element={<Gallery />} />
+          <Route path="/taxinova/contact/" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

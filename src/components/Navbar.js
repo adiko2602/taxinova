@@ -23,7 +23,7 @@ export default function Navbar() {
                         width: "100%"
                     }}>
 
-                    <Button href="taxinova/" style={{
+                    <Button href="/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -37,7 +37,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="taxinova/" style={{
+                                <Button href="/" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
@@ -57,7 +57,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="taxinova/gallery/" style={{
+                                <Button href="/gallery" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
@@ -78,7 +78,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="taxinova/contact/" style={{
+                                <Button href="/contact" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
