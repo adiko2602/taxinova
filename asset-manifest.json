@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taxinova/static/css/main.6f32bcdc.css",
-    "main.js": "/taxinova/static/js/main.57c28479.js",
+    "main.js": "/taxinova/static/js/main.e352b050.js",
     "static/media/background.png": "/taxinova/static/media/background.f1eed5329591c63481d2.png",
     "static/media/logo.png": "/taxinova/static/media/logo.f10934022fe0227c9e6a.png",
     "index.html": "/taxinova/index.html",
     "main.6f32bcdc.css.map": "/taxinova/static/css/main.6f32bcdc.css.map",
-    "main.57c28479.js.map": "/taxinova/static/js/main.57c28479.js.map"
+    "main.e352b050.js.map": "/taxinova/static/js/main.e352b050.js.map"
   },
   "entrypoints": [
     "static/css/main.6f32bcdc.css",
-    "static/js/main.57c28479.js"
+    "static/js/main.e352b050.js"
   ]
 }
