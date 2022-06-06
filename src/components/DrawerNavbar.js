@@ -27,7 +27,7 @@ export default function DrawerNavbar() {
                 >
                     <List >
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/" style={{
+                            <Button href="/taxinova/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -46,7 +46,7 @@ export default function DrawerNavbar() {
                         </ListItem>
 
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/gallery" style={{
+                            <Button href="taxinova/gallery/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -64,7 +64,7 @@ export default function DrawerNavbar() {
                         </ListItem>
 
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/contact" style={{
+                            <Button href="taxinova/contact/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -108,7 +108,7 @@ export default function DrawerNavbar() {
                     width: "100%"
                 }}>
 
-                    <Button href="/" style={{
+                    <Button href="taxinova/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",

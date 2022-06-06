@@ -23,7 +23,7 @@ export default function Navbar() {
                         width: "100%"
                     }}>
 
-                    <Button href="/" style={{
+                    <Button href="taxinova/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
