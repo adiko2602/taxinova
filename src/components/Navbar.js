@@ -8,6 +8,7 @@ import Logo from '../images/logo.png'
 export default function Navbar() {
     return (
         <div>
+            zmiana
             <AppBar elevation={0} style={{
                 position: "static",
                 backgroundColor: "white",
