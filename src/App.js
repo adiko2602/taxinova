@@ -9,7 +9,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/taxinova/" element={<Home />} />
+          <Route path="/taxinova/" element={<Home />} />
           <Route path="/taxinova/gallery/" element={<Gallery />} />
           <Route path="/taxinova/contact/" element={<Contact />} />
         </Routes>
