@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Toolbar, AppBar, Drawer, List, ListItem, ListItemText, Divider, Link } from '@mui/material';
+import { Button, Toolbar, AppBar, Drawer, List, ListItem } from '@mui/material';
+import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -27,7 +28,7 @@ export default function DrawerNavbar() {
                 >
                     <List >
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/taxinova" style={{
+                            <Button component={Link} to="/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -46,7 +47,7 @@ export default function DrawerNavbar() {
                         </ListItem>
 
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/taxinova/gallery" style={{
+                            <Button component={Link} to="/gallery" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -64,7 +65,7 @@ export default function DrawerNavbar() {
                         </ListItem>
 
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button href="/taxinova/contact" style={{
+                            <Button component={Link} to="/contact" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -108,7 +109,7 @@ export default function DrawerNavbar() {
                     width: "100%"
                 }}>
 
-                    <Button href="taxinova/" style={{
+                    <Button component={Link} to="/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",

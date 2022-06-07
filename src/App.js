@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
@@ -7,13 +7,13 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/taxinova/" element={<Home />} />
-          <Route path="/taxinova/gallery/" element={<Gallery />} />
-          <Route path="/taxinova/contact/" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

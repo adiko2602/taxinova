@@ -1,5 +1,6 @@
 import React from 'react';
 import { Stack, Button, Toolbar, AppBar, List, ListItem } from '@mui/material';
+import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -8,7 +9,6 @@ import Logo from '../images/logo.png'
 export default function Navbar() {
     return (
         <div>
-            zmiana
             <AppBar elevation={0} style={{
                 position: "static",
                 backgroundColor: "white",
@@ -24,7 +24,7 @@ export default function Navbar() {
                         width: "100%"
                     }}>
 
-                    <Button href="/taxinova" style={{
+                    <Button component={Link} to="/" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="/taxinova" style={{
+                                <Button component={Link} to="/" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
@@ -58,7 +58,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="/taxinova/gallery" style={{
+                                <Button component={Link} to="/gallery" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
@@ -79,7 +79,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button href="/taxinova/contact" style={{
+                                <Button component={Link} to="/contact" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
