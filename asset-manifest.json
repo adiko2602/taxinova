@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/taxinova/static/css/main.6f32bcdc.css",
-    "main.js": "/taxinova/static/js/main.84438639.js",
-    "static/media/background.png": "/taxinova/static/media/background.f1eed5329591c63481d2.png",
+    "main.js": "/taxinova/static/js/main.ce908731.js",
+    "static/media/background.jpg": "/taxinova/static/media/background.f9c39a0aceb7f12b2498.jpg",
+    "static/media/about.jpg": "/taxinova/static/media/about.8ec61cd10e8e02603526.jpg",
+    "static/media/smartphone.png": "/taxinova/static/media/smartphone.7ebf8fccd9f7c2d0ecef.png",
     "static/media/logo.png": "/taxinova/static/media/logo.f10934022fe0227c9e6a.png",
+    "static/media/image002.jpg": "/taxinova/static/media/image002.9f032f5458077025d887.jpg",
+    "static/media/image004.jpg": "/taxinova/static/media/image004.8f7ae13851691cac590a.jpg",
     "index.html": "/taxinova/index.html",
     "main.6f32bcdc.css.map": "/taxinova/static/css/main.6f32bcdc.css.map",
-    "main.84438639.js.map": "/taxinova/static/js/main.84438639.js.map"
+    "main.ce908731.js.map": "/taxinova/static/js/main.ce908731.js.map"
   },
   "entrypoints": [
     "static/css/main.6f32bcdc.css",
-    "static/js/main.84438639.js"
+    "static/js/main.ce908731.js"
   ]
 }
