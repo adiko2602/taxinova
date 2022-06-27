@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
-import Contact from "./pages/Contact";
+import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </HashRouter>
     </div>

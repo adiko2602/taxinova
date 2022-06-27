@@ -16,7 +16,7 @@ export default function Header() {
         <div>
             {isMobile ?
                 (<div style={{
-                    marginTop: "80px"
+                    marginTop: "10vh"
                 }}>
                     <DrawerNavbar />
                 </div>) :

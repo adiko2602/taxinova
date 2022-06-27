@@ -1,8 +1,10 @@
 import { Typography, Grid, Button } from '@mui/material'
 import React from 'react'
 import Header from '../components/Header'
-import background from '../images/background.png'
+import Footer from '../components/Footer'
+import background from '../images/background.jpg'
 import downloadAndroid from '../images/downloadAndroid.png'
+import smartphone from '../images/smartphone.png';
 import LocalTaxiIcon from '@mui/icons-material/LocalTaxi';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
@@ -45,12 +47,25 @@ export default function Home() {
                                     <div style={{
                                         margin: "0 auto"
                                     }}>
+                                        { navigator.userAgent.indexOf("Android") !== -1 ? 
                                         <Button href="/">
-                                            <img src={downloadAndroid} alt="Pobierz aplikację Android" />
-                                        </Button>
+                                            <img widht="85%" height="85%" src={downloadAndroid} alt="Pobierz aplikację Android" />
+                                        </Button> 
+                                            : 
+                                        navigator.userAgent.indexOf("like Mac") !== -1 ?
                                         <Button href="/">
-                                            <img src={downloadAndroid} alt="Pobierz aplikację Android" />
-                                        </Button>
+                                            <img  widht="85%" height="85%" src={downloadAndroid} alt="Pobierz aplikację iOS" />
+                                        </Button> 
+                                            : 
+                                            <>
+                                        <Button href="/">
+                                            <img widht="85%" height="85%" src={downloadAndroid} alt="Pobierz aplikację Android" />
+                                        </Button> 
+                                        <Button href="/">
+                                            <img  widht="85%" height="85%" src={downloadAndroid} alt="Pobierz aplikację iOS" />
+                                        </Button> 
+                                            </>
+                                        }
                                     </div>
                                 </div>
                             </Typography>
@@ -135,7 +150,45 @@ export default function Home() {
                         </Grid>
                     </Grid>
                 </div>
+                
+                <Grid container spacing={0} style={{
+                    backgroundColor: "#ec0000",
+                    padding: "1rem"
+                }}>
+                        <Grid item xs={12} md={6}>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                padding: "1rem"
+                            }}>
+                            <img src={smartphone} alt="Smartphone" />
+                            </div>
+
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <div style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                                padding: "1rem",
+                                height: "100%"
+                            }}>
+                            <Typography variant="h4" color="white">
+                                <strong>Zamów przejazd w naszej aplikacji!</strong>
+                            </Typography>
+                            <Typography variant="body1" color="white" style={{
+                                marginTop: "2rem"
+                            }}>
+                                Wybierz miejsce odbioru, następnie miejsce docelowe i ciesz się przejazdem z naszym kierowcą.
+                            </Typography>
+                            </div>
+
+                        </Grid>
+
+                    </Grid>
             </div>
+            <Footer />
         </div>
     )
 }

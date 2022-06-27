@@ -6,6 +6,7 @@ import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Logo from '../images/logo.png';
 
 export default function DrawerNavbar() {
@@ -18,7 +19,7 @@ export default function DrawerNavbar() {
             top: "0",
             justifyContent: "center",
             alignItem: "center",
-            height: "80px"
+            minHeight: "10vh"
         }}>
             <Toolbar>
                 <Drawer
@@ -32,7 +33,7 @@ export default function DrawerNavbar() {
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
-                                width: "100%",
+                                width: "40vw",
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
@@ -51,7 +52,7 @@ export default function DrawerNavbar() {
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
-                                width: "100%",
+                                width: "40vw",
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
@@ -65,19 +66,19 @@ export default function DrawerNavbar() {
                         </ListItem>
 
                         <ListItem onClick={() => setOpenDrawer(false)}>
-                            <Button component={Link} to="/contact" style={{
+                            <Button component={Link} to="/about" style={{
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
-                                width: "100%",
+                                width: "40vw",
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
-                                <EmailOutlinedIcon  style={{ color: "red"}} />
+                                <InfoOutlinedIcon  style={{ color: "red"}} />
                                 <div style={{
                                     marginLeft: "10px"
                                 }}>
-                                    Kontakt
+                                    O nas
                                 </div>
                             </Button>
                         </ListItem>
@@ -87,7 +88,7 @@ export default function DrawerNavbar() {
                                 padding: "10px",
                                 margin: "5px",
                                 color: "black",
-                                width: "100%",
+                                width: "40vw",
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
@@ -106,7 +107,7 @@ export default function DrawerNavbar() {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    width: "100%"
+                    width: "100vw"
                 }}>
 
                     <Button component={Link} to="/" style={{
@@ -114,9 +115,14 @@ export default function DrawerNavbar() {
                                 margin: "5px",
                                 color: "black",
                                 justifyContent: "center",
-                                alignItem: "center"
+                                alignItem: "center",
+                                height: "10vh"
                             }}>
-                        <img src={Logo} alt="Logo" width="70px" />
+                        <img src={Logo} alt="Logo" style={{
+                            maxWidth: "85%",
+                            maxHeight: "85%",
+                            objectFit: "contain"
+                        }}/>
                     </Button>
 
 

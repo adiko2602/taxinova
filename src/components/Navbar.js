@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Logo from '../images/logo.png'
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
                 backgroundColor: "white",
                 justifyContent: "center",
                 alignItem: "center",
-                height: "80px"
+                minHeight: "10vh"
             }}>
                 <Toolbar>
                     <div style={{
@@ -79,7 +80,7 @@ export default function Navbar() {
                                 margin: 0,
                                 padding: 0
                             }}>
-                                <Button component={Link} to="/contact" style={{
+                                <Button component={Link} to="/about" style={{
                                     padding: "10px",
                                     margin: "5px",
                                     color: "black",
@@ -87,11 +88,11 @@ export default function Navbar() {
                                     justifyContent: "left",
                                     alignItem: "center"
                                 }}>
-                                    <EmailOutlinedIcon style={{ color: "red"}}  />
+                                    <InfoOutlinedIcon style={{ color: "red"}}  />
                                     <div style={{
                                         marginLeft: "10px"
                                     }}>
-                                        Kontakt
+                                        O nas
                                     </div>
                                 </Button>
                             </ListItem>
