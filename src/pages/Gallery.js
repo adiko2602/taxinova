@@ -1,7 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import Header from '../components/Header'
-import about from '../images/about.jpg'
 import Footer from '../components/Footer'
 import image001 from '../images/image001.jpg'
 import image002 from '../images/image002.jpg' 
@@ -23,7 +22,7 @@ export default function Gallery() {
           <Grid item xs={12} md={12} style={{
             backgroundColor: "#ec0000",
             color: "white",
-            minHeight: "70vh"
+            minHeight: "35vh"
           }}>
             <div style={{
               display: "flex",
@@ -45,7 +44,7 @@ export default function Gallery() {
 
         <Grid container spacing={0}>
           {imagesUrl.map(imageUrl => (
-            <Grid item xs={12} md={6} >
+            <Grid key={imageUrl} item xs={12} md={6} >
               <img src={imageUrl} alt="Zdjęcie" style={{
                 width: "100%",
                 height: "100%"

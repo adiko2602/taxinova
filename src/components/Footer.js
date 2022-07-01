@@ -1,7 +1,6 @@
 import React from 'react'
-import downloadAndroid from '../images/downloadAndroid.png';
 import Logo from '../images/logo.png'
-import { Typography, Stack, Button, Toolbar, AppBar, List, ListItem, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import FacebookIcon from '@mui/icons-material/Facebook';

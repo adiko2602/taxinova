@@ -3,7 +3,6 @@ import { Stack, Button, Toolbar, AppBar, List, ListItem } from '@mui/material';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Logo from '../images/logo.png'
 

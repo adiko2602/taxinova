@@ -1,8 +1,5 @@
 import React from 'react';
-import { AppBar, Button, Toolbar, useMediaQuery, useTheme, IconButton, Typography, ButtonGroup } from '@mui/material';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 import Navbar from './Navbar'
 import DrawerNavbar from './DrawerNavbar';
