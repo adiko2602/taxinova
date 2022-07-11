@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Logo from '../images/logo.png'
 
 export default function Navbar() {
@@ -24,15 +26,15 @@ export default function Navbar() {
                         width: "100%"
                     }}>
 
-                    <Button component={Link} to="/" style={{
-                                padding: "10px",
-                                margin: "5px",
-                                color: "black",
-                                justifyContent: "center",
-                                alignItem: "center"
-                            }}>
-                        <img src={Logo} alt="Logo" width="70px" />
-                    </Button>
+                        <Button component={Link} to="/" style={{
+                            padding: "10px",
+                            margin: "5px",
+                            color: "black",
+                            justifyContent: "center",
+                            alignItem: "center"
+                        }}>
+                            <img src={Logo} alt="Logo" width="70px" />
+                        </Button>
                         <List component={Stack} direction="row" dense>
                             <ListItem style={{
                                 margin: 0,
@@ -44,7 +46,7 @@ export default function Navbar() {
                                     color: "black",
                                     whiteSpace: "nowrap"
                                 }}>
-                                    <HomeOutlinedIcon  style={{ color: "red"}} />
+                                    <HomeOutlinedIcon style={{ color: "red" }} />
                                     <div style={{
                                         marginLeft: "10px"
                                     }}>
@@ -53,6 +55,49 @@ export default function Navbar() {
 
                                 </Button>
                             </ListItem>
+
+
+                            <ListItem style={{
+                                margin: 0,
+                                padding: 0
+                            }}>
+                                <Button component={Link} to="/price" style={{
+                                    padding: "10px",
+                                    margin: "5px",
+                                    color: "black",
+                                    whiteSpace: "nowrap"
+                                }}>
+                                    <AttachMoneyIcon style={{ color: "red" }} />
+                                    <div style={{
+                                        marginLeft: "10px"
+                                    }}>
+                                        Cennik
+                                    </div>
+
+                                </Button>
+                            </ListItem>
+
+
+                            <ListItem style={{
+                                margin: 0,
+                                padding: 0
+                            }}>
+                                <Button component={Link} to="/contact" style={{
+                                    padding: "10px",
+                                    margin: "5px",
+                                    color: "black",
+                                    whiteSpace: "nowrap"
+                                }}>
+                                    <MailOutlineIcon style={{ color: "red" }} />
+                                    <div style={{
+                                        marginLeft: "10px"
+                                    }}>
+                                        Kontakt
+                                    </div>
+
+                                </Button>
+                            </ListItem>
+
 
                             <ListItem style={{
                                 margin: 0,
@@ -66,7 +111,7 @@ export default function Navbar() {
                                     justifyContent: "left",
                                     alignItem: "center"
                                 }}>
-                                    <CollectionsOutlinedIcon style={{ color: "red"}}  />
+                                    <CollectionsOutlinedIcon style={{ color: "red" }} />
                                     <div style={{
                                         marginLeft: "10px"
                                     }}>
@@ -87,7 +132,7 @@ export default function Navbar() {
                                     justifyContent: "left",
                                     alignItem: "center"
                                 }}>
-                                    <InfoOutlinedIcon style={{ color: "red"}}  />
+                                    <InfoOutlinedIcon style={{ color: "red" }} />
                                     <div style={{
                                         marginLeft: "10px"
                                     }}>

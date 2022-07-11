@@ -22,7 +22,7 @@ export default function Gallery() {
           <Grid item xs={12} md={12} style={{
             backgroundColor: "#ec0000",
             color: "white",
-            minHeight: "35vh"
+            minHeight: "45vh"
           }}>
             <div style={{
               display: "flex",

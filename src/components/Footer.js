@@ -51,7 +51,7 @@ export default function Footer() {
             fontSize: "3rem"
           }} />
         </Button>
-        <Button component={Link} to="/" style={{
+        {/* <Button component={Link} to="/" style={{
           padding: "5px",
           color: "#ec0000",
           justifyContent: "center",
@@ -60,7 +60,7 @@ export default function Footer() {
           <InstagramIcon style={{
             fontSize: "3rem"
           }} />
-        </Button>
+        </Button> */}
       </div>
     </div>
   )

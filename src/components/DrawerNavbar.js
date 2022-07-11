@@ -6,13 +6,15 @@ import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Logo from '../images/logo.png';
 
 export default function DrawerNavbar() {
     const [openDrawer, setOpenDrawer] = useState(false);
 
     return (
-        <AppBar elevation={0} style={{ 
+        <AppBar elevation={0} style={{
             backgroundColor: "white",
             position: "fixed",
             top: "0",
@@ -36,11 +38,51 @@ export default function DrawerNavbar() {
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
-                                <HomeOutlinedIcon  style={{ color: "red"}} />
+                                <HomeOutlinedIcon style={{ color: "red" }} />
                                 <div style={{
                                     marginLeft: "10px"
                                 }}>
                                     Strona Główna
+                                </div>
+
+                            </Button>
+                        </ListItem>
+
+
+                        <ListItem onClick={() => setOpenDrawer(false)}>
+                            <Button component={Link} to="/price" style={{
+                                padding: "10px",
+                                margin: "5px",
+                                color: "black",
+                                width: "40vw",
+                                justifyContent: "left",
+                                alignItem: "center"
+                            }}>
+                                <AttachMoneyIcon style={{ color: "red" }} />
+                                <div style={{
+                                    marginLeft: "10px"
+                                }}>
+                                    Cennik
+                                </div>
+
+                            </Button>
+                        </ListItem>
+
+
+                        <ListItem onClick={() => setOpenDrawer(false)}>
+                            <Button component={Link} to="/contact" style={{
+                                padding: "10px",
+                                margin: "5px",
+                                color: "black",
+                                width: "40vw",
+                                justifyContent: "left",
+                                alignItem: "center"
+                            }}>
+                                <MailOutlineIcon style={{ color: "red" }} />
+                                <div style={{
+                                    marginLeft: "10px"
+                                }}>
+                                    Kontakt
                                 </div>
 
                             </Button>
@@ -55,7 +97,7 @@ export default function DrawerNavbar() {
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
-                                <CollectionsOutlinedIcon style={{ color: "red"}}  />
+                                <CollectionsOutlinedIcon style={{ color: "red" }} />
                                 <div style={{
                                     marginLeft: "10px"
                                 }}>
@@ -73,7 +115,7 @@ export default function DrawerNavbar() {
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
-                                <InfoOutlinedIcon  style={{ color: "red"}} />
+                                <InfoOutlinedIcon style={{ color: "red" }} />
                                 <div style={{
                                     marginLeft: "10px"
                                 }}>
@@ -91,7 +133,7 @@ export default function DrawerNavbar() {
                                 justifyContent: "left",
                                 alignItem: "center"
                             }}>
-                                <CloseOutlinedIcon  style={{ color: "red"}} />
+                                <CloseOutlinedIcon style={{ color: "red" }} />
                                 <div style={{
                                     marginLeft: "10px"
                                 }}>
@@ -110,29 +152,29 @@ export default function DrawerNavbar() {
                 }}>
 
                     <Button component={Link} to="/" style={{
-                                padding: "10px",
-                                margin: "5px",
-                                color: "black",
-                                justifyContent: "center",
-                                alignItem: "center",
-                                height: "10vh"
-                            }}>
+                        padding: "10px",
+                        margin: "5px",
+                        color: "black",
+                        justifyContent: "center",
+                        alignItem: "center",
+                        height: "10vh"
+                    }}>
                         <img src={Logo} alt="Logo" style={{
                             maxWidth: "85%",
                             maxHeight: "85%",
                             objectFit: "contain"
-                        }}/>
+                        }} />
                     </Button>
 
 
                     <Button onClick={() => setOpenDrawer(!openDrawer)} style={{
-                                padding: "10px",
-                                margin: "5px",
-                                color: "black",
-                                justifyContent: "center",
-                                alignItem: "center"
-                            }}>
-                        <MenuOutlinedIcon style={{ color: "red"}} />
+                        padding: "10px",
+                        margin: "5px",
+                        color: "black",
+                        justifyContent: "center",
+                        alignItem: "center"
+                    }}>
+                        <MenuOutlinedIcon style={{ color: "red" }} />
                     </Button>
                 </div>
             </Toolbar>

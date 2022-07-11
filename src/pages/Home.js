@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import background from '../images/background.jpg'
 import downloadAndroid from '../images/downloadAndroid.png'
-import smartphone from '../images/smartphone.png';
+import smartphone from '../images/smartphoneFull.png';
 import LocalTaxiIcon from '@mui/icons-material/LocalTaxi';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';

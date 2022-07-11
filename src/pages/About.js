@@ -16,7 +16,7 @@ export default function About() {
           <Grid item xs={12} md={6} style={{
             backgroundColor: "#ec0000",
             color: "white",
-            minHeight: "35vh"
+            minHeight: "45vh"
           }}>
             <div style={{
               display: "flex",
@@ -36,7 +36,7 @@ export default function About() {
           </Grid>
 
           <Grid item xs={12} md={6} style={{
-            minHeight: "35vh"
+            minHeight: "45vh"
           }}>
             <div style={{
               backgroundImage: `url(${about})`,
@@ -51,7 +51,7 @@ export default function About() {
           </Grid>
         </Grid>
         <div style={{
-          margin: "8vh 2vw"
+          margin: "8vh 8vw"
         }}>
           <Typography variant="body1" style={{
             textAlign: "justify",
